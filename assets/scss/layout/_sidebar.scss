@@ -1,3 +1,10 @@
+aside{
+    position: fixed;
+    min-width: 296px;
+    min-height: 100vh;
+    color: $gray-900;
+}
+
 // 參考文章：以 <h1> 包覆 logo: 圖與文字可同時被搜尋到的技巧
 h1 a{
     background-image: url(/assets/images/logo-ANSWER.svg);
@@ -12,5 +19,36 @@ h1 a{
     white-space: nowrap;
 }
 nav a{
-    display: block;
+    cursor: inherit;
+    position: relative;
+    padding-left: 32px !important;
+    &:hover{
+        background-color: $gray-400;
+        cursor: pointer;
+    }
+    &.active{
+        color: $success !important;
+        pointer-events: none;
+    }
+    &.active::before{
+        content: "";
+        width: 4px;
+        height: 32px;
+        background-color: $success;
+        position: absolute;
+        left:0;
+    }
+}
+
+
+// admin區塊設定
+
+.admin img{
+    width: 40px;
+    height: 40px;
+}
+
+.admin-email{
+    font-size: $font-size-sm;
+    color: $gray-600;
 }
