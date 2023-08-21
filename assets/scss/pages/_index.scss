@@ -10,6 +10,10 @@ main{
   margin-left: 296px;
 }
 
+.container{
+  min-height: 100vh;
+}
+
 a{
   color: inherit !important;
   display: block !important;
@@ -19,4 +23,28 @@ a{
 h2{
   margin: 0 !important;
   padding:0 !important;
+}
+
+.page-link.active, .active > .page-link{
+  background-color: $success !important;
+  border: 1px solid $success !important;
+}
+
+.arrow-downward{
+  font-size: 16px !important;
+  margin-left: 7px;
+}
+
+table tbody tr:hover{
+  background-color: $gray-100;
+}
+
+table tbody a .material-icons:hover, .add-admin:hover{
+  color: $success !important;
+}
+
+.emir-wang{
+  width: 141px;
+  height: 141px !important;
+  object-fit: cover;
 }
