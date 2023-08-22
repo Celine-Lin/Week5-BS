@@ -1,18 +1,10 @@
-*{
-  font-family: 'Lato', 'Roboto Mono', sans-serif, monospace;
-}
+// Base 
 
-.index-title {
-  font-size: 100px;
-}
+*{ font-family: 'Lato', 'Roboto Mono', sans-serif, monospace;}
 
-main{
-  margin-left: 296px;
-}
+main{ margin-left: 296px;}
 
-.container{
-  min-height: 100vh;
-}
+.container{ min-height: 100vh;}
 
 a{
   color: inherit !important;
@@ -20,28 +12,25 @@ a{
   text-decoration: none !important;
 }
 
-h2{
-  margin: 0 !important;
-  padding:0 !important;
-}
-
 .page-link.active, .active > .page-link{
   background-color: $success !important;
   border: 1px solid $success !important;
 }
 
+// Admin table
+
 .arrow-downward{
   font-size: 16px !important;
   margin-left: 7px;
 }
-
 table tbody tr:hover{
   background-color: $gray-100;
 }
-
 table tbody a .material-icons:hover, .add-admin:hover{
   color: $success !important;
 }
+
+// Modal:View > user info
 
 .emir-wang{
   width: 141px;
@@ -49,12 +38,16 @@ table tbody a .material-icons:hover, .add-admin:hover{
   object-fit: cover;
 }
 
+// Model:Edit > Form: Verification
+
 .disabled-text{
   border-color: $gray-400 !important;
   &::placeholder{
     color: $gray-400 !important;
   }
 }
+
+// Model:Edit > Form: Custom Access
 
 .custom-access input[type=checkbox]{
   border: 2px solid $gray-900;
