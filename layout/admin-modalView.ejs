@@ -1,0 +1,61 @@
+<!-- Modal-View -->
+<div 
+    class="modal fade" 
+    id="modal-view" 
+    tabindex="-1" 
+    aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-1">
+                <div class="modal-body d-flex position-relative p-8">
+                     <!-- close button -->
+                     <button 
+                        type="button" 
+                        class="btn-close position-absolute end-0 me-8" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                    </button>
+                    <!-- user info -->
+                    <img src="/assets/images/emir.jpeg" class="me-6 rounded-1 emir-wang" alt="emir wang photo">
+                    <div>
+                        <p class="fs-6 mb-0">#1</p>
+                        <p class="fs-6 mb-0">Admin</p>
+                        <h4 class="fs-4 fw-bold mb-0">Emily Wicks</h4>
+                        <h5 class="fs-7 mb-5 text-secondary mb-0">emir.wicks@mail.com</h5>
+                        <!-- collapse button -->
+                        <div class="d-flex">
+                            <div class="fs-7 bg-light py-1 px-2">Verified</div>
+                            <a 
+                                href="#view-footer"
+                                role="button"
+                                class="ms-auto"
+                                data-bs-toggle="collapse" 
+                                aria-expanded="false" 
+                                aria-controls="viewFooter">
+                                <span class="material-icons text-success">expand_more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- collapse content -->
+                <div 
+                    class="modal-footer collapse border-0 p-8 pt-0" 
+                    id="view-footer"
+                    aria-expanded="false">
+                    <div class="d-flex justify-content-end">
+                        <button 
+                            type="button" 
+                            class="btn btn-outline-danger rounded-1 fw-bold me-4" 
+                            data-bs-dismiss="modal">
+                            Deactivate
+                        </button>
+                        <button 
+                            type="button" 
+                            class="btn btn-success rounded-1" 
+                            data-bs-toggle="modal"
+                            data-bs-target="#modal-edit">
+                            Edit
+                        </button>
+                    </div>    
+                </div>
+            </div>
+</div>
