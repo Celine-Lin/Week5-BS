@@ -1,5 +1,5 @@
 *{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Roboto Mono', sans-serif, monospace;
 }
 
 .index-title {
@@ -47,4 +47,20 @@ table tbody a .material-icons:hover, .add-admin:hover{
   width: 141px;
   height: 141px !important;
   object-fit: cover;
+}
+
+.disabled-text{
+  border-color: $gray-400 !important;
+  &::placeholder{
+    color: $gray-400 !important;
+  }
+}
+
+.custom-access input[type=checkbox]{
+  border: 2px solid $gray-900;
+}
+
+/* scrollbar width 參考同學方法破解出現y軸 */
+::-webkit-scrollbar{
+  width: 0;
 }
